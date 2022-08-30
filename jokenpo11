@@ -1,0 +1,68 @@
+from random import randint
+# tempo para dar o jokenpô
+from time import sleep
+# configurar as trÊs opções de jogo
+opcoes = ("pedra", "papel", "tesoura")
+#configuração para fazer o pc jogar
+pc = randint(0,2)
+#vezes que repete
+#colocar as apresentações na tela
+print ("escolha:"
+       "[0] pedra"
+       "[1] papel"
+       "[2]tesoura")
+jogador = int(input("escolha sua jogada?"))
+print("jo")
+sleep(1)
+print("ken")
+sleep(1)
+print("po")
+sleep(1)
+print("="*30)
+# o que cada um jogou
+print(f"computador jogou:{opcoes[pc]}")
+print(f"você jogou:{opcoes[jogador]}")
+# COLOCADO EM F PQ SIGNIFICA FORMATAÇÃO PARA INDETIFICAR OS { E [2
+# COLOCAR COM 0 1 E 2 PARA APARECER O PRINT EM TODOS
+sleep(1)
+print("eeeeeeeeeeee")
+print("="*30)
+if pc == 0: #pc jogou pedra
+    if jogador == 0:
+        print("empate")
+    elif jogador == 1:
+        print("você venceu")
+    elif jogador == 2:
+        print("computador venceu")
+    else:
+        print("jogada inválida")
+if pc == 1: #pc jogou pedra
+    if jogador == 0:
+        print("empate")
+    elif jogador == 1:
+        print("você venceu")
+    elif jogador == 2:
+        print("computador venceu")
+    else:
+        print("jogada inválida")
+if pc == 2: #pc jogou pedra
+    if jogador == 0:
+        print("empate")
+    elif jogador == 1:
+        print("você venceu")
+    elif jogador == 2:
+        print("computador venceu")
+    else:
+        print("jogada inválida")
+#quantidade de vezes que o código vai rolar
+# for n in range(0, 3):
+#     print()
+# while True:
+#     string = input("Digite 1 se quiser sair e 2 se quiser continuar: ")
+#     if string.lower() == "1":
+#         print("Fim!")
+#         break
+#     if string.lower() == "2":
+#         print("continuar")
+#         continue
+# Esse de cima é contra o pc
