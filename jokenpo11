@@ -4,67 +4,78 @@ from random import randint
 from time import sleep
 
 opcoes = ("pedra", "papel", "tesoura")
+while opcoes:
 
-#configuração para fazer o pc jogar
-pc = randint(0,2)
+    opcoes = ("pedra", "papel", "tesoura")
 
-#colocar as apresentações na tela
-print ("escolha:"
-       "[0] pedra"
-       "[1] papel"
-       "[2]tesoura")
+    #configuração para fazer o pc jogar
+    pc = randint(0,2)
 
-jogador = int(input("escolha sua jogada?"))
+    #colocar as apresentações na tela
+    print ("escolha:"
+           "[0] pedra"
+           "[1] papel"
+           "[2]tesoura")
 
-print("jo")
-sleep(1)
-print("ken")
-sleep(1)
-print("po")
-sleep(1)
-print("="*30)
+    jogador = int(input("escolha sua jogada?"))
 
-# o que cada um jogou
-print(f"computador jogou:{opcoes[pc]}")
-print(f"você jogou:{opcoes[jogador]}")
-# COLOCADO EM F PQ SIGNIFICA FORMATAÇÃO PARA INDETIFICAR OS { E [2
-# COLOCAR COM 0 1 E 2 PARA APARECER O PRINT EM TODOS
+    print("jo")
+    sleep(1)
+    print("ken")
+    sleep(1)
+    print("po")
+    sleep(1)
+    print("="*30)
 
-sleep(1)
-print("="*30)
+    # o que cada um jogou
+    print(f"computador jogou:{opcoes[pc]}")
+    print(f"você jogou:{opcoes[jogador]}")
+    # COLOCADO EM F PQ SIGNIFICA FORMATAÇÃO PARA INDETIFICAR OS { E [2
+    # COLOCAR COM 0 1 E 2 PARA APARECER O PRINT EM TODOS
 
-if pc == 0: #pc jogou pedra
-    if jogador == 0:
-        print("empate")
-    elif jogador == 1:
-        print("você venceu")
-    elif jogador == 2:
-        print("computador venceu")
-    else:
-        print("jogada inválida")
-if pc == 1: #pc jogou pedra
-    if jogador == 0:
-        print("empate")
-    elif jogador == 1:
-        print("você venceu")
-    elif jogador == 2:
-        print("computador venceu")
-    else:
-        print("jogada inválida")
-if pc == 2: #pc jogou pedra
-    if jogador == 0:
-        print("empate")
-    elif jogador == 1:
-        print("você venceu")
-    elif jogador == 2:
-        print("computador venceu")
+    sleep(1)
 
-while True:
-    continuar = input("Deseja continuar? digite 1 para continuar e 2 para sair:  ")
-    if continuar == 1:
-        print("o jogo vai encerrar, adeus")
+    if pc == 0: #pc jogou pedra
+        if jogador == 0:
+            print("empate")
+        elif jogador == 1:
+            print("você venceu")
+        elif jogador == 2:
+            print("computador venceu")
+        else:
+            print("jogada inválida")
+    if pc == 1: #pc jogou pedra
+        if jogador == 0:
+            print("empate")
+        elif jogador == 1:
+            print("você venceu")
+        elif jogador == 2:
+            print("computador venceu")
+        else:
+            print("jogada inválida")
+    if pc == 2: #pc jogou pedra
+        if jogador == 0:
+            print("empate")
+        elif jogador == 1:
+            print("você venceu")
+        elif jogador == 2:
+            print("computador venceu")
+
+    print("=" * 30)
+
+    print("digite 1 se quiser parar o jogo ou digite 2 se quiser continuar: ")
+    decisao = int(input("escreva sua decisão: "))
+
+    if decisao == 1:
+        sleep(1)
+        print("o jogo ira parar")
         sleep(1)
         break
-    elif continuar == 2:
-        print("o jogo vai reiniciar")
-        # tem que ver como que faz para reiniciar dps de escolher continuar
+
+    if decisao == 2:
+        print ("vamos continuar")
+        continue
+        sleep(1)
+        print("carregando ... ")
+        print("=" * 30)
+        sleep(1)
