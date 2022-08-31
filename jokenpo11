@@ -4,6 +4,7 @@ from random import randint
 from time import sleep
 
 opcoes = ("pedra", "papel", "tesoura")
+
 while opcoes:
 
     opcoes = ("pedra", "papel", "tesoura")
