@@ -58,6 +58,13 @@ if pc == 2: #pc jogou pedra
         print("você venceu")
     elif jogador == 2:
         print("computador venceu")
-    else:
-        print("jogada inválida")
-# Esse de cima é contra o pc
+
+while True:
+    continuar = input("Deseja continuar? digite 1 para continuar e 2 para sair:  ")
+    if continuar == 1:
+        print("o jogo vai encerrar, adeus")
+        sleep(1)
+        break
+    elif continuar == 2:
+        print("o jogo vai reiniciar")
+        # tem que ver como que faz para reiniciar dps de escolher continuar
