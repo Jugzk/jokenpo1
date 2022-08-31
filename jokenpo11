@@ -9,74 +9,225 @@ while opcoes:
 
     opcoes = ("pedra", "papel", "tesoura")
 
-    #configuração para fazer o pc jogar
-    pc = randint(0,2)
+    print("escolha 1 se for multiplayer, 2 se for singleplayer e 3 se for luta entre maquinas ")
+    escolha = int(input("faça sua escolha: "))
 
-    #colocar as apresentações na tela
-    print ("escolha:"
-           "[0] pedra"
-           "[1] papel"
-           "[2]tesoura")
+    if escolha == 2:
+        #configuração para fazer o pc jogar
+        pc = randint(0,2)
 
-    jogador = int(input("escolha sua jogada?"))
+        #colocar as apresentações na tela
+        print ("escolha:"
+               "[0] pedra"
+               "[1] papel"
+               "[2]tesoura")
 
-    print("jo")
-    sleep(1)
-    print("ken")
-    sleep(1)
-    print("po")
-    sleep(1)
-    print("="*30)
+        jogador = int(input("escolha sua jogada?"))
 
-    # o que cada um jogou
-    print(f"computador jogou:{opcoes[pc]}")
-    print(f"você jogou:{opcoes[jogador]}")
-    # COLOCADO EM F PQ SIGNIFICA FORMATAÇÃO PARA INDETIFICAR OS { E [2
-    # COLOCAR COM 0 1 E 2 PARA APARECER O PRINT EM TODOS
-
-    sleep(1)
-
-    if pc == 0: #pc jogou pedra
-        if jogador == 0:
-            print("empate")
-        elif jogador == 1:
-            print("você venceu")
-        elif jogador == 2:
-            print("computador venceu")
-        else:
-            print("jogada inválida")
-    if pc == 1: #pc jogou pedra
-        if jogador == 0:
-            print("empate")
-        elif jogador == 1:
-            print("você venceu")
-        elif jogador == 2:
-            print("computador venceu")
-        else:
-            print("jogada inválida")
-    if pc == 2: #pc jogou pedra
-        if jogador == 0:
-            print("empate")
-        elif jogador == 1:
-            print("você venceu")
-        elif jogador == 2:
-            print("computador venceu")
-
-    print("=" * 30)
-
-    print("digite 1 se quiser parar o jogo ou digite 2 se quiser continuar: ")
-    decisao = int(input("escreva sua decisão: "))
-
-    if decisao == 1:
+        print("jo")
         sleep(1)
-        print("o jogo ira parar")
+        print("ken")
         sleep(1)
-        break
+        print("po")
+        sleep(1)
+        print("="*30)
 
-    if decisao == 2:
-        print ("vamos continuar")
-        continue
+        # o que cada um jogou
+        print(f"computador jogou:{opcoes[pc]}")
+        print(f"você jogou:{opcoes[jogador]}")
+        # COLOCADO EM F PQ SIGNIFICA FORMATAÇÃO PARA INDETIFICAR OS { E [2
+        # COLOCAR COM 0 1 E 2 PARA APARECER O PRINT EM TODOS
+
         sleep(1)
-        print("carregando ... ")
+
+        if pc == 0: #pc jogou pedra
+            if jogador == 0:
+                print("empate")
+            elif jogador == 1:
+                print("você venceu")
+            elif jogador == 2:
+                print("computador venceu")
+            else:
+                print("jogada inválida")
+        if pc == 1: #pc jogou pedra
+            if jogador == 0:
+                print("empate")
+            elif jogador == 1:
+                print("você venceu")
+            elif jogador == 2:
+                print("computador venceu")
+            else:
+                print("jogada inválida")
+        if pc == 2: #pc jogou pedra
+            if jogador == 0:
+                print("empate")
+            elif jogador == 1:
+                print("você venceu")
+            elif jogador == 2:
+                print("computador venceu")
+
         print("=" * 30)
+
+        print("digite 1 se quiser parar o jogo ou digite 2 se quiser continuar: ")
+        decisao = int(input("escreva sua decisão: "))
+
+        if decisao == 1:
+            sleep(1)
+            print("o jogo ira parar")
+            sleep(1)
+            break
+
+        if decisao == 2:
+            print ("vamos continuar")
+            continue
+            sleep(1)
+
+            print("carregando ... ")
+            print("=" * 30)
+            sleep(1)
+
+    elif escolha == 1:
+        # configuração para fazer o pc jogar
+        pc = randint(0, 2)
+
+        # colocar as apresentações na tela
+        print("escolha:"
+              "[0] pedra"
+              "[1] papel"
+              "[2]tesoura")
+        jogador1 = int(input("jogador 1 escolha sua jogada: "))
+        jogador2 = int(input("jogador 2 escolha sua jogada: "))
+
+        print("jo")
         sleep(1)
+        print("ken")
+        sleep(1)
+        print("po")
+        sleep(1)
+        print("=" * 30)
+
+        print(f"jogador1 jogou:{opcoes[jogador1]}")
+        print(f"jogador2 jogou:{opcoes[jogador2]}")
+
+        sleep(1)
+
+        if jogador1 == 0: #pc jogou pedra
+            if jogador2 == 0:
+                print("empate")
+            elif jogador2 == 1:
+                print("jogador2 venceu")
+            elif jogador2 == 2:
+                print("jogador1 venceu")
+            else:
+                print("jogada inválida")
+        if jogador1 == 1: #pc jogou pedra
+            if jogador2 == 0:
+                print("jogador1 venceu")
+            elif jogador2 == 1:
+                print("empate")
+            elif jogador2 == 2:
+                print("jogador 2 venceu")
+            else:
+                print("jogada inválida")
+        if jogador1 == 2: #pc jogou pedra
+            if jogador2 == 0:
+                print("jogador2 venceu")
+            elif jogador2 == 1:
+                print("jogador1 venceu")
+            elif jogador2 == 2:
+                print("empate")
+        print("=" * 30)
+        print("digite 1 se quiser parar o jogo ou digite 2 se quiser continuar: ")
+        decisao = int(input("escreva sua decisão: "))
+
+        if decisao == 1:
+            sleep(1)
+            print("o jogo ira parar")
+            sleep(1)
+            break
+
+        if decisao == 2:
+            print("vamos continuar")
+            continue
+            sleep(1)
+
+            print("carregando ... ")
+            print("=" * 30)
+            sleep(1)
+
+        print("digite 1 se quiser parar o jogo ou digite 2 se quiser continuar: ")
+        decisao = int(input("escreva sua decisão: "))
+
+        if decisao == 1:
+            sleep(1)
+            print("o jogo ira parar")
+            sleep(1)
+            break
+
+        if decisao == 2:
+            print("vamos continuar")
+            continue
+            sleep(1)
+
+            print("carregando ... ")
+            print("=" * 30)
+            sleep(1)
+    if escolha == 3:
+        pc1 = randint(0, 2)
+        pc2 = randint(0, 2)
+
+        print("jo")
+        sleep(1)
+        print("ken")
+        sleep(1)
+        print("po")
+        sleep(1)
+
+        print("="*30)
+        print(f"computador1 jogou:{opcoes[pc1]}")
+        print(f"computador2 jogou:{opcoes[pc2]}")
+
+        if pc1 == 0:  # pc jogou pedra
+            if pc2 == 0:
+                print("empate")
+            elif pc2 == 1:
+                print("pc2 venceu")
+            elif pc2 == 2:
+                print("pc1 venceu")
+            else:
+                print("jogada inválida")
+        if pc1 == 1:  # pc jogou pedra
+            if pc2 == 0:
+                print("pc1 venceu")
+            elif pc2 == 1:
+                print("empate")
+            elif pc2 == 2:
+                print("pc2 venceu")
+            else:
+                print("jogada inválida")
+        if pc1 == 2:  # pc jogou pedra
+            if pc2 == 0:
+                print("pc2 venceu")
+            elif pc2 == 1:
+                print("pc2 venceu")
+            elif pc2 == 2:
+                print("empate")
+                print("=" * 30)
+
+        print("digite 1 se quiser parar o jogo ou digite 2 se quiser continuar: ")
+        decisao = int(input("escreva sua decisão: "))
+
+        if decisao == 1:
+            sleep(1)
+            print("o jogo ira parar")
+            sleep(1)
+            break
+
+        if decisao == 2:
+            print("vamos continuar")
+            continue
+            sleep(1)
+
+            print("carregando ... ")
+            print("=" * 30)
+            sleep(1)
