@@ -73,7 +73,11 @@ while opcoes:
 
         if decisao == 1:
             sleep(1)
-            print("o jogo ira parar")
+            print("o jogo ira parar, muito obrigado por jogar "
+                  "Vivi"
+                  "J. Guszak"
+                  "Freddy"
+                  "Jhonata")
             sleep(1)
             break
 
@@ -145,7 +149,11 @@ while opcoes:
 
         if decisao == 1:
             sleep(1)
-            print("o jogo ira parar")
+            print("o jogo ira parar, muito obrigado por jogar "
+                  "Vivi"
+                  "J. Guszak"
+                  "Freddy"
+                  "Jhonata")
             sleep(1)
             break
 
@@ -157,7 +165,7 @@ while opcoes:
             print("carregando ... ")
             print("=" * 30)
             sleep(1)
-            
+
     if escolha == 3:
         pc1 = randint(0, 2)
         pc2 = randint(0, 2)
@@ -205,7 +213,11 @@ while opcoes:
 
         if decisao == 1:
             sleep(1)
-            print("o jogo ira parar")
+            print("o jogo ira parar, muito obrigado por jogar "
+                  "Vivi"
+                  "J. Guszak"
+                  "Freddy"
+                  "Jhonata")
             sleep(1)
             break
 
