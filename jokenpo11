@@ -136,24 +136,9 @@ while opcoes:
                 print("jogador1 venceu")
             elif jogador2 == 2:
                 print("empate")
+            else:
+                print("jogada inválida")
         print("=" * 30)
-        print("digite 1 se quiser parar o jogo ou digite 2 se quiser continuar: ")
-        decisao = int(input("escreva sua decisão: "))
-
-        if decisao == 1:
-            sleep(1)
-            print("o jogo ira parar")
-            sleep(1)
-            break
-
-        if decisao == 2:
-            print("vamos continuar")
-            continue
-            sleep(1)
-
-            print("carregando ... ")
-            print("=" * 30)
-            sleep(1)
 
         print("digite 1 se quiser parar o jogo ou digite 2 se quiser continuar: ")
         decisao = int(input("escreva sua decisão: "))
@@ -172,6 +157,7 @@ while opcoes:
             print("carregando ... ")
             print("=" * 30)
             sleep(1)
+            
     if escolha == 3:
         pc1 = randint(0, 2)
         pc2 = randint(0, 2)
@@ -209,7 +195,7 @@ while opcoes:
             if pc2 == 0:
                 print("pc2 venceu")
             elif pc2 == 1:
-                print("pc2 venceu")
+                print("pc1 venceu")
             elif pc2 == 2:
                 print("empate")
                 print("=" * 30)
